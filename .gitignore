@@ -50,3 +50,4 @@ test-results/
 pnpm-lock.yaml
 *.pyc
 __pycache__
+deplopyed_apps/

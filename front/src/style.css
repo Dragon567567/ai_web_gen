@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #6366f1;
+  --secondary-color: #8b5cf6;
+  --bg-color: #0f172a;
+  --card-bg: #1e293b;
+  --text-color: #f8fafc;
+  --text-muted: #94a3b8;
+  --border-color: #334155;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+.el-button--primary {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  border: none;
+}
+
+.el-button--primary:hover {
+  background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+}
+
+.el-input__wrapper {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: none !important;
+}
+
+.el-input__inner {
+  color: var(--text-color) !important;
+}
+
+.el-input__inner::placeholder {
+  color: var(--text-muted) !important;
+}
+
+.el-card {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 15px !important;
+}
+
+.el-card__body {
+  color: var(--text-color);
+}
+
+.el-form-item__label {
+  color: var(--text-muted) !important;
+}
+
+.el-menu {
+  background-color: var(--card-bg) !important;
+  border-right: none !important;
+}
+
+.el-menu-item {
+  color: var(--text-muted) !important;
+}
+
+.el-menu-item:hover,
+.el-menu-item.is-active {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+.el-dialog {
+  background-color: var(--card-bg) !important;
+  border-radius: 15px !important;
+}
+
+.el-dialog__title {
+  color: var(--text-color) !important;
+}
+
+.el-dialog__body {
+  color: var(--text-muted) !important;
+}
+
+.el-table {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+}
+
+.el-table th.el-table__cell {
+  background-color: var(--bg-color) !important;
+  color: var(--text-muted) !important;
+}
+
+.el-table tr {
+  background-color: var(--card-bg) !important;
+}
+
+.el-table--enable-row-hover .el-table__body tr:hover > td.el-table__cell {
+  background-color: var(--bg-color) !important;
+}
+
+.el-pagination {
+  --el-pagination-bg-color: var(--card-bg);
+  --el-pagination-text-color: var(--text-muted);
+  --el-pagination-button-bg-color: var(--card-bg);
+}
+
+.el-message-box {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.el-message-box__title {
+  color: var(--text-color) !important;
+}
+
+.el-message-box__message {
+  color: var(--text-muted) !important;
+}
+
+.el-select__wrapper {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: none !important;
+}
+
+.el-select__placeholder {
+  color: var(--text-muted) !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
